@@ -13,4 +13,4 @@ client.on('message', msg => {
     }
   });
 
-client.login('OTM1NjkxNzQ1MzUyNjM0Mzc4.YfCU2A.4KUr0YoZBlecJPP6X-mGcr8aGUE')
+client.login(process.env.pass)
