@@ -13,4 +13,4 @@ client.on('message', msg => {
     }
   });
 
-client.login(process.env.AAA)
+client.login(process.gitignore.env)
