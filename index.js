@@ -13,4 +13,4 @@ client.on('message', msg => {
     }
   });
 
-client.login(process.env.pass)
+client.login(process.env.AAA)
