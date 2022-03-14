@@ -13,8 +13,26 @@ for (const folder of commandFolders) {
 		client.commands.set(command.name, command);
 	};
 };
+   ...
+   steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install Dependencies (prod)
+        run: yarn install --frozen-lockfile --production
+
+      - name: Run Tests (JEST)
+        run: yarn test --ci --silent --testPathIgnorePatterns=experimental
+        env:
+          CI: true
+          API_KEY: ${{ secrets.API_KEY }}
 const cooldowns = new Discord.Collection();
-const token = process.env.DISCORD_BOT_SECRET;
+const token = process.env.API_KEY;
 
 // Variables - any value that might change and placeholders for value storage
 var args;
