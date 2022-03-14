@@ -1,0 +1,13 @@
+{
+  "botName": "nezonbot",
+  "botColor": "#ebb434",
+  "prefix": "nez ",
+
+  "botOwners": ["your mom"],
+
+  "version": "0.1",
+
+  "shutOff": false,
+  "devMode": false,
+  "purgeDatabase": false
+}

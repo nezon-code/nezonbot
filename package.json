@@ -1,0 +1,17 @@
+{
+  "name": "PeanutKit",
+  "version": "0.1.0",
+  "description": "A ready-made base for classic text-based Discord bots made with Discord.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "home": "^2.0.0"
+  }
+}
