@@ -30,7 +30,7 @@ for (const folder of commandFolders) {
         run: yarn test --ci --silent --testPathIgnorePatterns=experimental
         env:
           CI: true
-          API_KEY: ${{ secrets.API_KEY }}
+          API_KEY: ${{ secrets.DISCORD_BOT_SECRET }}
 const cooldowns = new Discord.Collection();
 const token = process.env.API_KEY;
 
